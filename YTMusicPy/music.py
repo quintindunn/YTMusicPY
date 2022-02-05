@@ -115,6 +115,8 @@ class Music:
 
     def select_queue(self, index: int):
         self.send_command('player-set-queue', value=index)
+        return True
 
     def add_to_playlist(self, index:int):
         self.send_command('player-add-playlist', value=index)
+        return True
